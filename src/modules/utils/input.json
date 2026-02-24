@@ -1,0 +1,544 @@
+{
+    "input": [
+        {
+            "policy_number": {
+                "field": "policy_number",
+                "type": "str"
+            }
+        },
+        {
+            "eff_date": {
+                "field": "eff_date",
+                "type": "str"
+            }
+        },
+        {
+            "risk_zip": {
+                "field": "risk_zip",
+                "type": "str"
+            }
+        },
+        {
+            "county": {
+                "field": "county",
+                "type": "str"
+            }
+        },
+        {
+            "dtc": {
+                "field": "dtc",
+                "type": "str"
+            }
+        },
+        {
+            "coverage_a": {
+                "field": "coverage_a",
+                "type": "str"
+            }
+        },
+        {
+            "protection_class": {
+                "field": "protection_class",
+                "type": "str"
+            }
+        },
+        {
+            "construction_type": {
+                "field": "construction_type",
+                "type": "str"
+            }
+        },
+        {
+            "construction_year": {
+                "field": "construction_year",
+                "type": "str"
+            }
+        },
+        {
+            "roof_year": {
+                "field": "roof_year",
+                "type": "str"
+            }
+        },
+        {
+            "roof_material": {
+                "field": "roof_material",
+                "type": "str"
+            }
+        },
+        {
+            "flat_tile": {
+                "field": "flat_tile",
+                "type": "str"
+            }
+        },
+        {
+            "roof_surfacing_payment": {
+                "field": "roof_surfacing_payment",
+                "type": "str"
+            }
+        },
+        {
+            "open_foundation": {
+                "field": "open_foundation",
+                "type": "str"
+            }
+        },
+        {
+            "insurance_score": {
+                "field": "insurance_score",
+                "type": "str"
+            }
+        },
+        {
+            "insurance_tier": {
+                "field": "insurance_tier",
+                "type": "str"
+            }
+        },
+        {
+            "secured_community": {
+                "field": "secured_community",
+                "type": "str"
+            }
+        },
+        {
+            "fire_alarm_device": {
+                "field": "fire_alarm_device",
+                "type": "str"
+            }
+        },
+        {
+            "sprinkler_system": {
+                "field": "sprinkler_system",
+                "type": "str"
+            }
+        },
+        {
+            "burglar_alarm_device": {
+                "field": "burglar_alarm_device",
+                "type": "str"
+            }
+        },
+        {
+            "tankless_water_heater": {
+                "field": "tankless_water_heater",
+                "type": "str"
+            }
+        },
+        {
+            "water_detection_device": {
+                "field": "water_detection_device",
+                "type": "str"
+            }
+        },
+        {
+            "employee_discount": {
+                "field": "employee_discount",
+                "type": "str"
+            }
+        },
+        {
+            "senior_discount": {
+                "field": "senior_discount",
+                "type": "str"
+            }
+        },
+        {
+            "loss_mitigation_credit": {
+                "field": "loss_mitigation_credit",
+                "type": "str"
+            }
+        },
+        {
+            "nvac_maintenance_contract_discount": {
+                "field": "nvac_maintenance_contract_discount",
+                "type": "str"
+            }
+        },
+        {
+            "companion_policy_discount": {
+                "field": "companion_policy_discount",
+                "type": "str"
+            }
+        },
+        {
+            "preferred_contractor": {
+                "field": "preferred_contractor",
+                "type": "str"
+            }
+        },
+        {
+            "accredited_builder": {
+                "field": "accredited_builder",
+                "type": "str"
+            }
+        },
+        {
+            "roof_cover_type": {
+                "field": "roof_cover_type",
+                "type": "str"
+            }
+        },
+        {
+            "terrain": {
+                "field": "terrain",
+                "type": "str"
+            }
+        },
+        {
+            "roof_deck_attachment": {
+                "field": "roof_deck_attachment",
+                "type": "str"
+            }
+        },
+        {
+            "fbc_wind_speed": {
+                "field": "fbc_wind_speed",
+                "type": "str"
+            }
+        },
+        {
+            "internal_pressure_design": {
+                "field": "internal_pressure_design",
+                "type": "str"
+            }
+        },
+        {
+            "wbdr": {
+                "field": "wbdr",
+                "type": "str"
+            }
+        },
+        {
+            "roof_wall_connection": {
+                "field": "roof_wall_connection",
+                "type": "str"
+            }
+        },
+        {
+            "roof_shape": {
+                "field": "roof_shape",
+                "type": "str"
+            }
+        },
+        {
+            "swr": {
+                "field": "swr",
+                "type": "str"
+            }
+        },
+        {
+            "opening_protection": {
+                "field": "opening_protection",
+                "type": "str"
+            }
+        },
+        {
+            "bceg": {
+                "field": "bceg",
+                "type": "str"
+            }
+        },
+        {
+            "deductible_aop": {
+                "field": "deductible_aop",
+                "type": "str"
+            }
+        },
+        {
+            "deductible_nhw": {
+                "field": "deductible_nhw",
+                "type": "str"
+            }
+        },
+        {
+            "deductible_hur": {
+                "field": "deductible_hur",
+                "type": "str"
+            }
+        },
+        {
+            "coverage_b": {
+                "field": "coverage_b",
+                "type": "str"
+            }
+        },
+        {
+            "coverage_c": {
+                "field": "coverage_c",
+                "type": "str"
+            }
+        },
+        {
+            "coverage_d": {
+                "field": "coverage_d",
+                "type": "str"
+            }
+        },
+        {
+            "number_of_stories": {
+                "field": "number_of_stories",
+                "type": "str"
+            }
+        },
+        {
+            "water_damage_limit": {
+                "field": "water_damage_limit",
+                "type": "str"
+            }
+        },
+        {
+            "usage": {
+                "field": "usage",
+                "type": "str"
+            }
+        },
+        {
+            "units_fire_division": {
+                "field": "units_fire_division",
+                "type": "str"
+            }
+        },
+        {
+            "ord_law": {
+                "field": "ord_law",
+                "type": "str"
+            }
+        },
+        {
+            "incr_cov_a": {
+                "field": "incr_cov_a",
+                "type": "str"
+            }
+        },
+        {
+            "pprc": {
+                "field": "pprc",
+                "type": "str"
+            }
+        },
+        {
+            "lapse_in_coverage": {
+                "field": "lapse_in_coverage",
+                "type": "str"
+            }
+        },
+        {
+            "prior_claims": {
+                "field": "prior_claims",
+                "type": "str"
+            }
+        },
+        {
+            "years_with_company": {
+                "field": "years_with_company",
+                "type": "str"
+            }
+        },
+        {
+            "coverage_e": {
+                "field": "coverage_e",
+                "type": "str"
+            }
+        },
+        {
+            "coverage_f": {
+                "field": "coverage_f",
+                "type": "str"
+            }
+        },
+        {
+            "solar_panel_limit": {
+                "field": "solar_panel_limit",
+                "type": "str"
+            }
+        },
+        {
+            "sinkhole_coverage": {
+                "field": "sinkhole_coverage",
+                "type": "str"
+            }
+        },
+        {
+            "structures_rented_limit": {
+                "field": "structures_rented_limit",
+                "type": "str"
+            }
+        },
+        {
+            "home_sharing_coverage": {
+                "field": "home_sharing_coverage",
+                "type": "str"
+            }
+        },
+        {
+            "incr_pp_limit_jew_fur": {
+                "field": "incr_pp_limit_jew_fur",
+                "type": "str"
+            }
+        },
+        {
+            "incr_pp_limit_silver_gold": {
+                "field": "incr_pp_limit_silver_gold",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_antique": {
+                "field": "sch_pp_antique",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_bicycle": {
+                "field": "sch_pp_bicycle",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_camera": {
+                "field": "sch_pp_camera",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_coin": {
+                "field": "sch_pp_coin",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_stamp": {
+                "field": "sch_pp_stamp",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_artb": {
+                "field": "sch_pp_artb",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_artnb": {
+                "field": "sch_pp_artnb",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_fur": {
+                "field": "sch_pp_fur",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_golf": {
+                "field": "sch_pp_golf",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_sport": {
+                "field": "sch_pp_sport",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_gunfi": {
+                "field": "sch_pp_gunfi",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_gunco": {
+                "field": "sch_pp_gunco",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_jewelry": {
+                "field": "sch_pp_jewelry",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_misc": {
+                "field": "sch_pp_misc",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_music": {
+                "field": "sch_pp_music",
+                "type": "str"
+            }
+        },
+        {
+            "sch_pp_silverware": {
+                "field": "sch_pp_silverware",
+                "type": "str"
+            }
+        },
+        {
+            "la_limit": {
+                "field": "la_limit",
+                "type": "str"
+            }
+        },
+        {
+            "fungi_limit": {
+                "field": "fungi_limit",
+                "type": "str"
+            }
+        },
+        {
+            "golf_cart_limit": {
+                "field": "golf_cart_limit",
+                "type": "str"
+            }
+        },
+        {
+            "water_backup_limit": {
+                "field": "water_backup_limit",
+                "type": "str"
+            }
+        },
+        {
+            "animal_liab_limit": {
+                "field": "animal_liab_limit",
+                "type": "str"
+            }
+        },
+        {
+            "screen_encl_limit": {
+                "field": "screen_encl_limit",
+                "type": "str"
+            }
+        },
+        {
+            "eb_limit": {
+                "field": "eb_limit",
+                "type": "str"
+            }
+        },
+        {
+            "pi_limit": {
+                "field": "pi_limit",
+                "type": "str"
+            }
+        },
+        {
+            "home_comp_limit": {
+                "field": "home_comp_limit",
+                "type": "str"
+            }
+        },
+        {
+            "edoc_id": {
+                "field": "edoc_id",
+                "type": "str"
+            }
+        }
+    ]
+}

@@ -1,0 +1,493 @@
+{
+    "base_rates": {
+        "table_name": "base_rates",
+        "sheet_name": "base_rates",
+        "lookup_keys": [
+            "location_zipcode",
+            "Sinkhole Territory"
+        ],
+        "peril_columns": {
+            "all_other_perils": "AOP",
+            "non_hurricane_wind": "NHW",
+            "hurricane": "HUR"
+        },
+        "factor_columns": {}
+    },
+    "zip_county": {
+        "table_name": "zip_county",
+        "sheet_name": "zip_county",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "distance_to_coast": {
+        "table_name": "distance_to_coast",
+        "sheet_name": "distance_to_coast",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "miles_to_group": {
+        "table_name": "miles_to_group",
+        "sheet_name": "miles_to_group",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "amount_of_insurance": {
+        "table_name": "amount_of_insurance",
+        "sheet_name": "amount_of_insurance",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+
+    "covA_addl_limit": {
+        "table_name": "covA_addl_limit",
+        "sheet_name": "covA_addl_limit",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "protection_class_construction": {
+        "table_name": "protection_class_construction",
+        "sheet_name": "protection_class_construction",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "age_of_home": {
+        "table_name": "age_of_home",
+        "sheet_name": "age_of_home",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "year_built": {
+        "table_name": "year_built",
+        "sheet_name": "year_built",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "year_built_lookup": {
+        "table_name": "year_built_lookup",
+        "sheet_name": "year_built_lookup",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "age_of_roof": {
+        "table_name": "age_of_roof",
+        "sheet_name": "age_of_roof",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "roof_payment_schedule": {
+        "table_name": "roof_payment_schedule",
+        "sheet_name": "roof_payment_schedule",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "tier": {
+        "table_name": "tier",
+        "sheet_name": "tier",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "secured_community": {
+        "table_name": "secured_community",
+        "sheet_name": "secured_community",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "central_burglar_alarm": {
+        "table_name": "central_burglar_alarm",
+        "sheet_name": "central_burglar_alarm",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "central_fire_alarm": {
+        "table_name": "central_fire_alarm",
+        "sheet_name": "central_fire_alarm",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "full_sprinkler_system": {
+        "table_name": "full_sprinkler_system",
+        "sheet_name": "full_sprinkler_system",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "tankless_water_heater": {
+        "table_name": "tankless_water_heater",
+        "sheet_name": "tankless_water_heater",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "water_detection": {
+        "table_name": "water_detection",
+        "sheet_name": "water_detection",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "employee_discount": {
+        "table_name": "employee_discount",
+        "sheet_name": "employee_discount",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "wind_loss_mitigation_new": {
+        "table_name": "wind_loss_mitigation_new",
+        "sheet_name": "wind_loss_mitigation_new",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "wind_loss_mitigation_op_new": {
+        "table_name": "wind_loss_mitigation_op_new",
+        "sheet_name": "wind_loss_mitigation_op_new",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "wind_loss_mitigation_old": {
+        "table_name": "wind_loss_mitigation_old",
+        "sheet_name": "wind_loss_mitigation_old",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "wind_loss_mitigation_op_old": {
+        "table_name": "wind_loss_mitigation_op_old",
+        "sheet_name": "wind_loss_mitigation_op_old",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "building_code_effective_grading": {
+        "table_name": "building_code_effective_grading",
+        "sheet_name": "building_code_effective_grading",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "cap_on_credits": {
+        "table_name": "cap_on_credits",
+        "sheet_name": "cap_on_credits",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "aop_deductible": {
+        "table_name": "aop_deductible",
+        "sheet_name": "aop_deductible",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "coverage_a": {
+        "table_name": "coverage_a",
+        "sheet_name": "coverage_a",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "nhw_deductible": {
+        "table_name": "nhw_deductible",
+        "sheet_name": "nhw_deductible",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "hur_deductible": {
+        "table_name": "hur_deductible",
+        "sheet_name": "hur_deductible",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "hur_deductible_validation": {
+        "table_name": "hur_deductible_validation",
+        "sheet_name": "hur_deductible_validation",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "coverage_b": {
+        "table_name": "coverage_b",
+        "sheet_name": "coverage_b",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "coverage_c": {
+        "table_name": "coverage_c",
+        "sheet_name": "coverage_c",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "coverage_d": {
+        "table_name": "coverage_d",
+        "sheet_name": "coverage_d",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "number_of_stories": {
+        "table_name": "number_of_stories",
+        "sheet_name": "number_of_stories",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "water_damage": {
+        "table_name": "water_damage",
+        "sheet_name": "water_damage",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "occupancy_usage": {
+        "table_name": "occupancy_usage",
+        "sheet_name": "occupancy_usage",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "townhouse_rowhouse": {
+        "table_name": "townhouse_rowhouse",
+        "sheet_name": "townhouse_rowhouse",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "townhouse_rowhouse_group": {
+        "table_name": "townhouse_rowhouse_group",
+        "sheet_name": "townhouse_rowhouse_group",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "ordinance_or_law": {
+        "table_name": "ordinance_or_law",
+        "sheet_name": "ordinance_or_law",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "addl_cov_a": {
+        "table_name": "addl_cov_a",
+        "sheet_name": "addl_cov_a",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "personal_property_rep_cost": {
+        "table_name": "personal_property_rep_cost",
+        "sheet_name": "personal_property_rep_cost",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "lapse_in_coverage": {
+        "table_name": "lapse_in_coverage",
+        "sheet_name": "lapse_in_coverage",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "prior_loss": {
+        "table_name": "prior_loss",
+        "sheet_name": "prior_loss",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "min_premium": {
+        "table_name": "min_premium",
+        "sheet_name": "min_premium",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "coverage_e": {
+        "table_name": "coverage_e",
+        "sheet_name": "coverage_e",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "county_zone": {
+        "table_name": "county_zone",
+        "sheet_name": "county_zone",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "coverage_f": {
+        "table_name": "coverage_f",
+        "sheet_name": "coverage_f",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "solar_panel_coverage": {
+        "table_name": "solar_panel_coverage",
+        "sheet_name": "solar_panel_coverage",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "solar_panel_aoi": {
+        "table_name": "solar_panel_aoi",
+        "sheet_name": "solar_panel_aoi",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "sinkhole_terr_surcharge": {
+        "table_name": "sinkhole_terr_surcharge",
+        "sheet_name": "sinkhole_terr_surcharge",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "sinkhole_deductible": {
+        "table_name": "sinkhole_deductible",
+        "sheet_name": "sinkhole_deductible",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "struc_rented_prop_prem": {
+        "table_name": "struc_rented_prop_prem",
+        "sheet_name": "struc_rented_prop_prem",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "struc_rented_liab_prem": {
+        "table_name": "struc_rented_liab_prem",
+        "sheet_name": "struc_rented_liab_prem",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "home_sharing_prop_prem": {
+        "table_name": "home_sharing_prop_prem",
+        "sheet_name": "home_sharing_prop_prem",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "home_sharing_liab_prem": {
+        "table_name": "home_sharing_liab_prem",
+        "sheet_name": "home_sharing_liab_prem",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "increased_spec_limits": {
+        "table_name": "increased_spec_limits",
+        "sheet_name": "increased_spec_limits",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "scheduled_pp": {
+        "table_name": "scheduled_pp",
+        "sheet_name": "scheduled_pp",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "loss_assessment": {
+        "table_name": "loss_assessment",
+        "sheet_name": "loss_assessment",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "limited_fungi": {
+        "table_name": "limited_fungi",
+        "sheet_name": "limited_fungi",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "golf_cart": {
+        "table_name": "golf_cart",
+        "sheet_name": "golf_cart",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "water_backup": {
+        "table_name": "water_backup",
+        "sheet_name": "water_backup",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "animal_liability": {
+        "table_name": "animal_liability",
+        "sheet_name": "animal_liability",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "ltd_hur_screened_encl": {
+        "table_name": "ltd_hur_screened_encl",
+        "sheet_name": "ltd_hur_screened_encl",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "equipment_breakdown": {
+        "table_name": "equipment_breakdown",
+        "sheet_name": "equipment_breakdown",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "personal_injury": {
+        "table_name": "personal_injury",
+        "sheet_name": "personal_injury",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "computer": {
+        "table_name": "computer",
+        "sheet_name": "computer",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "electronic_documents": {
+        "table_name": "electronic_documents",
+        "sheet_name": "electronic_documents",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "fees_assessments": {
+        "table_name": "fees_assessments",
+        "sheet_name": "fees_assessments",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    }
+}

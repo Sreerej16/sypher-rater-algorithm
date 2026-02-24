@@ -1,0 +1,10 @@
+{
+  "files": {
+    "reference_data_excel": "data/config_files/sypher-rater-reference-tables_v1.0.xlsx",
+    "input_file": "data/input_files/sypher_bulk_test_mapped.csv",
+    "output_file_all": "data/output_files/sypher_bulk_test_transformed_output_all_v1.1.csv",
+    "output_file_premium": "data/output_files/sypher_bulk_test_transformed_premium_v1.1.csv",
+    "output_file_factor_and_premium": "data/output_files/sypher_bulk_test_transformed_factor_and_premium_v1.1.csv",
+    "reference": "data/config_files/reference.json"
+  }
+}

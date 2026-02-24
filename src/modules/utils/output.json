@@ -1,0 +1,16 @@
+{
+    "input": [
+        {
+            "policy_number": {
+                "field": "policy_number",
+                "type": "str"
+            }
+        },
+        {
+            "eff_date": {
+                "field": "eff_date",
+                "type": "str"
+            }
+        }
+    ]
+}
