@@ -1,7 +1,7 @@
 import pandas as pd
 def total_premium_excluding_fees_calc(input_df):
     # List of premium columns to sum
-    premium_columns = ['adjusted_total_base_premium','calculated_coverage_e_premium','calculated_coverage_f_premium',
+    premium_columns = ['total_base_premium','calculated_coverage_e_premium','calculated_coverage_f_premium',
                        'solar_panel_premium','sinkhole_premium','structures_rented_liab_premium',
                        'structures_rented_prop_premium','increased_spec_limits_premium','scheduled_pp_premium',
                        'loss_assessment_premium','limited_fungi_premium','golf_cart_premium','water_backup_premium','animal_liability_premium',

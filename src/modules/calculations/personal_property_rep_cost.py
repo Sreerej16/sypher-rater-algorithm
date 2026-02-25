@@ -73,8 +73,6 @@ def personal_property_rep_cost_factor_calc(input_df, dataframes, input_attribute
         input_df['personal_property_rep_cost_hur_premium']
     ).round(0)
 
-    print(input_df)
-
     input_df['invalid_lookup'] = np.where(input_df['personal_property_rep_cost'].isna(), True, input_df['invalid_lookup'])
     input_df['error_msg'] = np.where(input_df['personal_property_rep_cost'].isna(),
                                      input_df['error_msg'] + ',' + 'Invalid Personal Property Rep Cost',

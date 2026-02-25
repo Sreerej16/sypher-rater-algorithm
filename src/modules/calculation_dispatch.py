@@ -44,7 +44,6 @@ from calculations.coverage_f import coverage_f_factor_calc
 from calculations.solar_panel import solar_panel_factor_calc
 from calculations.sink_hole import sink_hole_factor_calc
 from calculations.structures_rented import structures_rented_factors_calc
-from calculations.home_sharing import home_sharing_factors_calc
 from calculations.increased_spec_limits import increased_spec_limits_factor_calc
 from calculations.electronic_documents import electronic_documents_factor_calc
 from calculations.personal_injury import personal_injury_factor_calc
@@ -120,19 +119,18 @@ def process_all_calculations(input_df, dataframes, input_attributes):
     input_df = total_base_peril_premium_calc(input_df,dataframes, input_attributes)
     
     # # # # Lookup additional factors
-    # input_df = coverage_e_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = coverage_f_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = solar_panel_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = sink_hole_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = structures_rented_factors_calc(input_df,dataframes, input_attributes)
-    # # input_df = home_sharing_factors_calc(input_df,dataframes, input_attributes)
-    # input_df = increased_spec_limits_factor_calc(input_df,dataframes, input_attributes)   
-    # input_df = scheduled_pp_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = loss_assessment_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = limited_fungi_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = golf_cart_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = water_backup_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = animal_liability_factor_calc(input_df,dataframes, input_attributes)
+    input_df = coverage_e_factor_calc(input_df,dataframes, input_attributes)
+    input_df = coverage_f_factor_calc(input_df,dataframes, input_attributes)
+    input_df = solar_panel_factor_calc(input_df,dataframes, input_attributes)
+    input_df = sink_hole_factor_calc(input_df,dataframes, input_attributes)
+    input_df = structures_rented_factors_calc(input_df,dataframes, input_attributes)
+    input_df = increased_spec_limits_factor_calc(input_df,dataframes, input_attributes)   
+    input_df = scheduled_pp_factor_calc(input_df,dataframes, input_attributes)
+    input_df = loss_assessment_factor_calc(input_df,dataframes, input_attributes)
+    input_df = limited_fungi_factor_calc(input_df,dataframes, input_attributes)
+    input_df = golf_cart_factor_calc(input_df,dataframes, input_attributes)
+    input_df = water_backup_factor_calc(input_df,dataframes, input_attributes)
+    input_df = animal_liability_factor_calc(input_df,dataframes, input_attributes)
     # input_df = ltd_hur_screened_encl_factor_calc(input_df,dataframes, input_attributes) 
     # input_df = equipment_breakdown_factor_calc(input_df,dataframes, input_attributes)
     # input_df = personal_injury_factor_calc(input_df,dataframes, input_attributes)
