@@ -34,18 +34,7 @@ def distance_to_coast_calc(input_df,dataframes, input_attributes):
     # dtc_group_df = dataframes.get('miles_to_group_df')
     dtc_df       = dataframes.get('distance_to_coast_df')
 
-    dtc_label_map = {
-        '0 - 1,000 feet':       '0_ft_1000_ft',
-        '1,001 - 2,500 feet':   '1001_ft_2500_ft',
-        '2,501 feet - 1 mile':  '2501_ft_1_mi',
-        '1.01 - 2 miles':       'gt_1_mi_2_mi',
-        '2.01 - 3 miles':       'gt_2_mi_3mi',
-        '3.01 - 5 miles':       'gt_3_mi_5_mi',
-        '5.01 - 10 miles':      'gt_5_mi_10_mi',
-        '10+ miles':            'gt_10_mi',
-    }
-    dtc_df['distance_to_coast'] = dtc_df['distance_to_coast'].map(dtc_label_map).fillna(dtc_df['distance_to_coast'])
-
+    
     input_df['distance_to_coast'] = input_df[distance_to_coast].apply(transform_distance_to_coast)
 
     input_df = pd.merge(input_df,dtc_df, how='left', left_on='distance_to_coast', right_on='distance_to_coast')

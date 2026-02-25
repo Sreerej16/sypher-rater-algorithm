@@ -43,6 +43,8 @@ def hur_deductible_factor_calc(input_df,dataframes, input_attributes):
     input_df.rename(columns={'aop': 'hur_deductible_aop_factor', 
                              'nhw': 'hur_deductible_nhw_factor',
                              'hur':  'hur_deductible_hur_factor'}, inplace=True)
+    
+    print(input_df.iloc[[9]])
     # Fill missing columns after the merge with default values
     input_df['hur_deductible_aop_factor'].fillna(1, inplace=True)
     input_df['hur_deductible_nhw_factor'].fillna(1, inplace=True)

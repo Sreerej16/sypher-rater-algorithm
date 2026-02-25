@@ -489,5 +489,12 @@
         "lookup_keys": [],
         "peril_columns": {},
         "factor_columns": {}
+    },
+    "senior_discount": {
+        "table_name": "senior_discount",
+        "sheet_name": "senior_discount",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
     }
 }

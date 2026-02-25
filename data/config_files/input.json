@@ -121,6 +121,12 @@
             }
         },
         {
+            "senior_discount": {
+                "field": "senior_discount",
+                "type": "str"
+            }
+        },
+        {
             "roof_cover": {
                 "field": "roof_cover",
                 "type": "str"

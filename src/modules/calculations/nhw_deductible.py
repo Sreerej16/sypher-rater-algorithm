@@ -38,6 +38,7 @@ def nhw_deductible_factor_calc(input_df,dataframes, input_attributes):
     input_df.rename(columns={'aop': 'nhw_deductible_aop_factor', 
                              'nhw': 'nhw_deductible_nhw_factor',
                              'hur':'nhw_deductible_hur_factor'}, inplace=True)
+    
     # Fill missing columns after the merge with default values
     input_df['nhw_deductible_aop_factor'].fillna(1, inplace=True)
     input_df['nhw_deductible_nhw_factor'].fillna(1, inplace=True)

@@ -5,7 +5,8 @@ def total_premium_excluding_fees_calc(input_df):
                        'solar_panel_premium','sinkhole_premium','structures_rented_liab_premium',
                        'structures_rented_prop_premium','increased_spec_limits_premium','scheduled_pp_premium',
                        'loss_assessment_premium','limited_fungi_premium','golf_cart_premium','water_backup_premium','animal_liability_premium',
-                       'ltd_hur_screened_encl_premium','equipment_breakdown_premium','personal_injury_premium','computer_premium']
+                       'ltd_hur_screened_encl_premium','equipment_breakdown_premium','personal_injury_premium','computer_premium',
+                       'ordinance_or_law_premium','addl_cov_a_premium','personal_property_rep_cost_premium']
     
     # Calculate total premium excluding fees 
     input_df['total_excl_fees_premium'] = input_df[premium_columns].sum(axis=1).astype(float).round(0)

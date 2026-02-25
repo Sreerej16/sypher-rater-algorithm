@@ -5,7 +5,7 @@ def prior_loss_factor_calc(input_df, dataframes, input_attributes):
     prior_claims   = find_input_attribute(input_attributes, 'prior_claims')
     # From the array of dataframes, get the relevant df 
     prior_loss_df = dataframes.get('prior_loss_df')
-    prior_loss_df['Number or Prior Claims'] = prior_loss_df['Number or Prior Claims'].astype(str)
+    prior_loss_df['number_or_prior_claims'] = prior_loss_df['number_or_prior_claims'].astype(str)
     input_df['prior_claims']
 
 
@@ -16,7 +16,7 @@ def prior_loss_factor_calc(input_df, dataframes, input_attributes):
                         prior_loss_df,
                         how='left',
                         left_on='prior_claims_category',
-                        right_on='Number or Prior Claims')
+                        right_on='number_or_prior_claims')
 
     # Rename columns after the merge
     input_df.rename(columns={
@@ -31,14 +31,14 @@ def prior_loss_factor_calc(input_df, dataframes, input_attributes):
     input_df['prior_claims_hur_factor'].fillna(1, inplace=True)
 
     # Mark invalid lookups where the merge didn't find a match - this is not working right since None is converting to nan and causing error.
-    input_df['invalid_lookup'] = np.where(input_df['Number or Prior Claims'].isna(), True, input_df['invalid_lookup'])
+    input_df['invalid_lookup'] = np.where(input_df['number_or_prior_claims'].isna(), True, input_df['invalid_lookup'])
     
     # Update the error message only if 'invalid_lookup' is True
-    input_df['error_msg'] = np.where(input_df['Number or Prior Claims'].isna(), 
+    input_df['error_msg'] = np.where(input_df['number_or_prior_claims'].isna(), 
                                      input_df['error_msg']+','+'Invalid Prior Claims', 
                                      input_df['error_msg'])
     
     # Drop extra columns from the merge
-    input_df.drop(columns=['prior_claims_category','Number or Prior Claims'], inplace=True)
+    input_df.drop(columns=['prior_claims_category','number_or_prior_claims'], inplace=True)
 
     return input_df

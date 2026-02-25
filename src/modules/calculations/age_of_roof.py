@@ -11,12 +11,10 @@ def age_of_roof_factor_calc(input_df, dataframes, input_attributes):
     # From the array of dataframes, get the relevant df 
     age_of_roof_df = dataframes.get('age_of_roof_df')
     age_of_roof_df['roof_age_ref'] = age_of_roof_df['roof_age_ref'].astype(str)
-    
+
     input_df[roof_year] = pd.to_numeric(input_df[roof_year], errors="coerce")
     # Calculate roof age
     input_df['roof_age_value'] = input_df[effective_date].dt.year - input_df[roof_year]
-
-    input_df['roof_age'] = pd.to_numeric(input_df['roof_age'], errors='coerce')
 
     # Categorize roof age: '60+' if >= 60, otherwise the actual value as string
     input_df['roof_age_category'] = np.where(input_df['roof_age_value'] >= 30, '30+', input_df['roof_age_value'].astype(str))

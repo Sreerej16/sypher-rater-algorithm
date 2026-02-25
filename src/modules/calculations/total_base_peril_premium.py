@@ -10,30 +10,27 @@ def total_base_peril_premium_calc(input_df, dataframes, input_attributes):
         'protection_class_construction_aop_factor','home_age_aop_factor','year_built_aop_factor',
         'roof_age_aop_factor','windstorm_aop_factor','tier_aop_factor','cap_on_credit_aop_factor',
         'aop_deductible_aop_factor','nhw_deductible_aop_factor','hur_deductible_aop_factor',
-        'coverage_b_aop_factor','coverage_c_aop_factor','coverage_d_aop_factor','no_of_stories_aop_factor',
-        'water_damage_limitation_aop_factor','usage_aop_factor','townhouse_rowhouse_aop_factor',
-        'ordinance_or_law_aop_factor','addl_cov_a_aop_factor','personal_property_rep_cost_aop_factor',
-        'prior_coverage_aop_factor','prior_claims_aop_factor',
+        'coverage_b_aop_factor','coverage_c_aop_factor','coverage_d_aop_factor',
+        'water_damage_limitation_aop_factor','usage_aop_factor','prior_coverage_aop_factor',
+        'prior_claims_aop_factor','prior_coverage_aop_factor','prior_claims_aop_factor',
 
         # NHW
         'base_rates_nhw_factor','distance_to_coast_nhw_factor','amount_of_insurance_nhw_factor',
         'protection_class_construction_nhw_factor','home_age_nhw_factor','year_built_nhw_factor',
         'roof_age_nhw_factor','windstorm_nhw_factor','tier_nhw_factor','cap_on_credit_nhw_factor',
         'aop_deductible_nhw_factor','nhw_deductible_nhw_factor','hur_deductible_nhw_factor',
-        'coverage_b_nhw_factor','coverage_c_nhw_factor','coverage_d_nhw_factor','no_of_stories_nhw_factor',
-        'water_damage_limitation_nhw_factor','usage_nhw_factor','townhouse_rowhouse_nhw_factor',
-        'ordinance_or_law_nhw_factor','addl_cov_a_nhw_factor','personal_property_rep_cost_nhw_factor',
-        'prior_coverage_nhw_factor','prior_claims_nhw_factor',
+        'coverage_b_nhw_factor','coverage_c_nhw_factor','coverage_d_nhw_factor',
+        'water_damage_limitation_nhw_factor','usage_nhw_factor','prior_coverage_nhw_factor',
+        'prior_claims_nhw_factor','prior_coverage_nhw_factor','prior_claims_nhw_factor',
 
         # HUR
         'base_rates_hur_factor','distance_to_coast_hur_factor','amount_of_insurance_hur_factor',
         'protection_class_construction_hur_factor','home_age_hur_factor','year_built_hur_factor',
         'roof_age_hur_factor','windstorm_hur_factor','tier_hur_factor','cap_on_credit_hur_factor',
         'aop_deductible_hur_factor','nhw_deductible_hur_factor','hur_deductible_hur_factor',
-        'coverage_b_hur_factor','coverage_c_hur_factor','coverage_d_hur_factor','no_of_stories_hur_factor',
-        'water_damage_limitation_hur_factor','usage_hur_factor','townhouse_rowhouse_hur_factor',
-        'ordinance_or_law_hur_factor','addl_cov_a_hur_factor','personal_property_rep_cost_hur_factor',
-        'prior_coverage_hur_factor','prior_claims_hur_factor'
+        'coverage_b_hur_factor','coverage_c_hur_factor','coverage_d_hur_factor',
+        'water_damage_limitation_hur_factor','usage_hur_factor','prior_coverage_hur_factor',
+        'prior_claims_hur_factor','prior_coverage_hur_factor','prior_claims_hur_factor'
     ]
 
     for col in required_cols:

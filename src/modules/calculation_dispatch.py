@@ -20,6 +20,7 @@ from calculations.water_detection import water_detection_factor_calc
 from calculations.fire_protection_discount import fire_protection_factor_calc
 from calculations.water_protection_discount import water_protection_discount_calc
 from calculations.protection_device_credit import protection_device_factor_calc
+from calculations.senior_discount import senior_citizen_discount_factor_calc
 from calculations.employee_discount import employee_discount_factor_calc
 from calculations.wind_loss_mitigation import wind_loss_mitigation_factor_calc
 from calculations.building_code_effectiveness_grading import building_code_effective_grading_factor_calc
@@ -36,10 +37,8 @@ from calculations.lapse_in_coverage import lapse_in_coverage_factor_calc
 from calculations.personal_property_rep_cost import personal_property_rep_cost_factor_calc
 from calculations.ordinance_or_law import ordinance_or_law_factor_calc
 from calculations.addl_cov_a import addl_cov_a_factor_calc
-from calculations.townhouse_rowhouse import townhouse_rowhouse_factor_calc
 from calculations.occupancy_usage import occupancy_usage_factor_calc
 from calculations.water_damage import water_damage_factor_calc
-from calculations.number_of_stories import number_of_stories_factor_calc
 from calculations.coverage_e import coverage_e_factor_calc
 from calculations.coverage_f import coverage_f_factor_calc
 from calculations.solar_panel import solar_panel_factor_calc
@@ -79,50 +78,46 @@ def process_all_calculations(input_df, dataframes, input_attributes):
     # Lookup base premium factors
     input_df = baserates_calc(input_df,dataframes, input_attributes)
     input_df = distance_to_coast_calc(input_df,dataframes , input_attributes)
-    # input_df = covafactors_calc(input_df,dataframes, input_attributes)
-    # input_df = protection_class_construction_calc(input_df,dataframes, input_attributes)
-    # input_df = age_of_home_calc(input_df,dataframes, input_attributes)
-    # input_df = year_built_calc(input_df,dataframes, input_attributes)
-    # input_df = age_of_roof_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = roof_payment_schedule_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = insurance_tier_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = secured_community_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = central_burglar_alarm_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = central_fire_alarm_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = full_sprinkler_system_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = tankless_waterheater_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = water_detection_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = fire_protection_factor_calc(input_df)
-    # input_df = water_protection_discount_calc(input_df)
-    # input_df = protection_device_factor_calc(input_df)
-    # input_df = employee_discount_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = wind_loss_mitigation_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = building_code_effective_grading_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = cap_on_credits_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = aop_deductible_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = nhw_deductible_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = hur_deductible_factor_calc(input_df,dataframes, input_attributes)
+    input_df = covafactors_calc(input_df,dataframes, input_attributes)
+    input_df = protection_class_construction_calc(input_df,dataframes, input_attributes)
+    input_df = age_of_home_calc(input_df,dataframes, input_attributes)
+    input_df = year_built_calc(input_df,dataframes, input_attributes)
+    input_df = age_of_roof_factor_calc(input_df,dataframes, input_attributes)
+    input_df = roof_payment_schedule_factor_calc(input_df,dataframes, input_attributes)
+    input_df = insurance_tier_factor_calc(input_df,dataframes, input_attributes)
+    input_df = secured_community_factor_calc(input_df,dataframes, input_attributes)
+    input_df = central_burglar_alarm_factor_calc(input_df,dataframes, input_attributes)
+    input_df = central_fire_alarm_factor_calc(input_df,dataframes, input_attributes)
+    input_df = full_sprinkler_system_factor_calc(input_df,dataframes, input_attributes)
+    input_df = tankless_waterheater_factor_calc(input_df,dataframes, input_attributes)
+    input_df = water_detection_factor_calc(input_df,dataframes, input_attributes)
+    input_df = fire_protection_factor_calc(input_df)
+    input_df = water_protection_discount_calc(input_df)
+    input_df = protection_device_factor_calc(input_df)
+    input_df = senior_citizen_discount_factor_calc(input_df, dataframes, input_attributes)
+    input_df = employee_discount_factor_calc(input_df,dataframes, input_attributes)
+    input_df = wind_loss_mitigation_factor_calc(input_df,dataframes, input_attributes)
+    input_df = building_code_effective_grading_factor_calc(input_df,dataframes, input_attributes)
+    input_df = cap_on_credits_factor_calc(input_df,dataframes, input_attributes)
+    input_df = aop_deductible_factor_calc(input_df,dataframes, input_attributes)
+    input_df = nhw_deductible_factor_calc(input_df,dataframes, input_attributes)
+    input_df = hur_deductible_factor_calc(input_df,dataframes, input_attributes)
     
     
     
-    # input_df = coverage_b_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = coverage_c_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = coverage_d_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = number_of_stories_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = water_damage_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = occupancy_usage_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = townhouse_rowhouse_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = ordinance_or_law_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = addl_cov_a_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = personal_property_rep_cost_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = lapse_in_coverage_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = prior_loss_factor_calc(input_df,dataframes, input_attributes)  
+    input_df = coverage_b_factor_calc(input_df,dataframes, input_attributes)
+    input_df = coverage_c_factor_calc(input_df,dataframes, input_attributes)
+    input_df = coverage_d_factor_calc(input_df,dataframes, input_attributes)
+    input_df = water_damage_factor_calc(input_df,dataframes, input_attributes)
+    input_df = occupancy_usage_factor_calc(input_df,dataframes, input_attributes)
+    input_df = lapse_in_coverage_factor_calc(input_df,dataframes, input_attributes)
+    input_df = prior_loss_factor_calc(input_df,dataframes, input_attributes)  
     
     # # # Calculate step premiums for each factor
     # input_df = calculate_step_premiums(input_df)
     
     # # # Calculate base premium amounts
-    # input_df = total_base_peril_premium_calc(input_df,dataframes, input_attributes)
+    input_df = total_base_peril_premium_calc(input_df,dataframes, input_attributes)
     
     # # # # Lookup additional factors
     # input_df = coverage_e_factor_calc(input_df,dataframes, input_attributes)
@@ -142,6 +137,12 @@ def process_all_calculations(input_df, dataframes, input_attributes):
     # input_df = equipment_breakdown_factor_calc(input_df,dataframes, input_attributes)
     # input_df = personal_injury_factor_calc(input_df,dataframes, input_attributes)
     # input_df = computer_factor_calc(input_df,dataframes, input_attributes)
+
+    # input_df = ordinance_or_law_factor_calc(input_df,dataframes, input_attributes)
+    # input_df = addl_cov_a_factor_calc(input_df,dataframes, input_attributes)
+    # input_df = personal_property_rep_cost_factor_calc(input_df,dataframes, input_attributes)
+
+
     # # input_df = electronic_documents_factor_calc(input_df,dataframes, input_attributes)
 
     # # Calculate total premium amounts with additional factors
