@@ -2,16 +2,23 @@ import pandas as pd
 import numpy as np
 from utils.json_handler import find_input_attribute
 
-def ltd_hur_screened_encl_factor_calc(input_df,dataframes, input_attributes):
-    
-    limited_hurricane_coverage=find_input_attribute(input_attributes, 'limited_hurricane_coverage')
-    
+def ltd_hur_screened_encl_factor_calc(input_df, dataframes, input_attributes):
+
+    limited_hurricane_coverage = find_input_attribute(input_attributes, 'limited_hurricane_coverage')
+
     ltd_hur_df = dataframes.get('ltd_hur_screened_encl_df')
 
     if input_df[limited_hurricane_coverage].isna().any():
         input_df['ltd_hur_screened_encl_premium'] = pd.NA
         return input_df
-    
+
+    # Check if required dataframe has data
+    if ltd_hur_df.empty or 'screened_enclosures_and_carports_factor' not in ltd_hur_df.columns:
+        input_df.loc[:, 'error_msg'] = input_df['error_msg'] + ',Missing ltd_hur_screened_encl reference data - filled with 0'
+        input_df.loc[:, 'invalid_lookup'] = True
+        input_df['ltd_hur_screened_encl_premium'] = 0
+        return input_df
+
     input_df['scrn_encl_carports_fact'] = ltd_hur_df['screened_enclosures_and_carports_factor'].values[0]
 
     # Mask for 'Excluded' rows

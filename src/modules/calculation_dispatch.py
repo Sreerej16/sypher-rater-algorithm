@@ -47,7 +47,6 @@ from calculations.structures_rented import structures_rented_factors_calc
 from calculations.increased_spec_limits import increased_spec_limits_factor_calc
 from calculations.electronic_documents import electronic_documents_factor_calc
 from calculations.personal_injury import personal_injury_factor_calc
-from calculations.equipment_breakdown import equipment_breakdown_factor_calc
 from calculations.scheduled_pp import scheduled_pp_factor_calc
 from calculations.loss_assessment import loss_assessment_factor_calc
 from calculations.limited_fungi import limited_fungi_factor_calc
@@ -55,6 +54,7 @@ from calculations.golf_cart import golf_cart_factor_calc
 from calculations.water_backup import water_backup_factor_calc
 from calculations.animal_liability import animal_liability_factor_calc
 from calculations.ltd_hur_screened_encl import ltd_hur_screened_encl_factor_calc
+from calculations.cyber_guard import cyber_guard_factor_calc
 from calculations.computer import computer_factor_calc
 from calculations.fees_assessments import fees_assessments_calc
 from calculations.total_premium_excluding_fees import total_premium_excluding_fees_calc
@@ -131,22 +131,22 @@ def process_all_calculations(input_df, dataframes, input_attributes):
     input_df = golf_cart_factor_calc(input_df,dataframes, input_attributes)
     input_df = water_backup_factor_calc(input_df,dataframes, input_attributes)
     input_df = animal_liability_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = ltd_hur_screened_encl_factor_calc(input_df,dataframes, input_attributes) 
-    # input_df = equipment_breakdown_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = personal_injury_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = computer_factor_calc(input_df,dataframes, input_attributes)
+    input_df = ltd_hur_screened_encl_factor_calc(input_df,dataframes, input_attributes)
+    input_df = cyber_guard_factor_calc(input_df,dataframes, input_attributes)
+    input_df = personal_injury_factor_calc(input_df,dataframes, input_attributes)
+    input_df = computer_factor_calc(input_df,dataframes, input_attributes)
 
-    # input_df = ordinance_or_law_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = addl_cov_a_factor_calc(input_df,dataframes, input_attributes)
-    # input_df = personal_property_rep_cost_factor_calc(input_df,dataframes, input_attributes)
+    input_df = ordinance_or_law_factor_calc(input_df,dataframes, input_attributes)
+    input_df = addl_cov_a_factor_calc(input_df,dataframes, input_attributes)
+    input_df = personal_property_rep_cost_factor_calc(input_df,dataframes, input_attributes)
 
 
-    # # input_df = electronic_documents_factor_calc(input_df,dataframes, input_attributes)
+    input_df = electronic_documents_factor_calc(input_df,dataframes, input_attributes)
 
     # # Calculate total premium amounts with additional factors
-    # input_df = total_premium_excluding_fees_calc(input_df)
-    # input_df = fees_assessments_calc(input_df, dataframes)
-    # input_df = total_premium_including_fees_calc(input_df)
+    input_df = total_premium_excluding_fees_calc(input_df, dataframes, input_attributes)
+    input_df = fees_assessments_calc(input_df, dataframes)
+    input_df = total_premium_including_fees_calc(input_df, input_attributes)
     
     return input_df
 

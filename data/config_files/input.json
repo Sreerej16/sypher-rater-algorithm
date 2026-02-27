@@ -481,8 +481,8 @@
             }
         },
         {
-            "edoc_id": {
-                "field": "edoc_id",
+            "edoc": {
+                "field": "edoc",
                 "type": "str"
             }
         },
@@ -490,6 +490,12 @@
             "payment_plan":{
                 "field":"payment_plan",
                 "type":"str"
+            }
+        },
+        {
+            "cyber_guard_coverage": {
+                "field": "cyber_guard_coverage",
+                "type": "str"
             }
         }
     ]

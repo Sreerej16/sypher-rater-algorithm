@@ -245,6 +245,13 @@
         "peril_columns": {},
         "factor_columns": {}
     },
+    "cov_d_packages": {
+        "table_name": "cov_d_packages",
+        "sheet_name": "cov_d_packages",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
     "number_of_stories": {
         "table_name": "number_of_stories",
         "sheet_name": "number_of_stories",
@@ -493,6 +500,13 @@
     "senior_discount": {
         "table_name": "senior_discount",
         "sheet_name": "senior_discount",
+        "lookup_keys": [],
+        "peril_columns": {},
+        "factor_columns": {}
+    },
+    "cyber_guard": {
+        "table_name": "cyber_guard",
+        "sheet_name": "cyber_guard",
         "lookup_keys": [],
         "peril_columns": {},
         "factor_columns": {}

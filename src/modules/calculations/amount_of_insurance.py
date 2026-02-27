@@ -57,20 +57,22 @@ def covafactors_calc(input_df, dataframes, input_attributes):
 
 def interpolate_factors(limits, cov_a_factors, peril):
     """
-    Vectorized interpolation for limits less than or equal to the base limit.
+    Ceiling lookup for limits less than or equal to the base limit.
+    Returns the factor for the first table entry >= the given limit.
     Parameters:
         limits (pd.Series): Series of limits from the input DataFrame.
         cov_a_factors (pd.DataFrame): The CovA factors table.
         peril (str): The peril for which to calculate the factor.
     Returns:
-        np.ndarray: The interpolated factors for the given limits.
+        np.ndarray: The looked-up factors for the given limits.
     """
-    # Ensure the columns are numeric, converting where necessary
-    limit_column = pd.to_numeric(cov_a_factors['coverage_a_amt'], errors='coerce')
-    factor_column = pd.to_numeric(cov_a_factors[peril], errors='coerce')
-    
-    # Perform linear interpolation on the entire vector
-    return np.interp(limits, limit_column, factor_column)
+    limit_column = pd.to_numeric(cov_a_factors['coverage_a_amt'], errors='coerce').values
+    factor_column = pd.to_numeric(cov_a_factors[peril], errors='coerce').values
+
+    # Find the index of the first table entry >= limit (ceiling lookup)
+    indices = np.searchsorted(limit_column, np.asarray(limits), side='left')
+    indices = np.clip(indices, 0, len(factor_column) - 1)
+    return factor_column[indices]
 
 def calculate_above_base_limit_factors(limits, cov_a_factors, cov_a_addl_factors, peril, base_limit, increment):
     """

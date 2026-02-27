@@ -10,6 +10,7 @@ def addl_cov_a_factor_calc(input_df, dataframes, input_attributes):
     hur_deductible  = find_input_attribute(input_attributes, 'hur_deductible')
 
     addl_cov_a_df['addl_coverage_a'] = addl_cov_a_df['addl_coverage_a'].astype(str)
+    input_df[addl_coverage_a] = input_df[addl_coverage_a].astype(str)
 
     # Merge to get the multiplier (aop, nhw, hur columns in reference table)
     input_df = pd.merge(input_df,
